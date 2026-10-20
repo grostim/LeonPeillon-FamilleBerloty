@@ -1,0 +1,12 @@
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.release.tex
+.DS_Store
+__pycache__/
+tmp/
+output/

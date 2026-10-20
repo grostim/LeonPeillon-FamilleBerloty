@@ -1,0 +1,18 @@
+name: Erreur de transcription
+description: Signaler une lecture ou une mise en page à corriger
+title: 'fix: '
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page originale et photographie
+      placeholder: 'Page 5 — IMGP0084.JPG'
+    validations:
+      required: true
+  - type: textarea
+    id: passage
+    attributes:
+      label: Passage concerné et correction proposée
+      description: Distinguer la lecture du document d'une correction historique ; donner une source si nécessaire.
+    validations:
+      required: true
