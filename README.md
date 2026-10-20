@@ -30,7 +30,7 @@ Les liens suivants pointent vers les livrables de la dernière release réussie 
 
 L'essai retrace les origines rurales des Berloty et Poulat, leur installation à Bourg puis à Lyon, la carrière notariale de François Félix Berloty, ses acquisitions immobilières et le partage de sa succession, notamment à Ouroux, Vauxrenard, Vougy et Lyon. Le NOTA final porte sur les quais du Puits-au-Sel, de la Peyrollerie et Pierre Scize.
 
-Le texte comporte plusieurs contradictions conservées et annotées : âge de Claude Denis, année de naissance de Bonaventure, décès de Scholastique Bonaventure et date d'achat de la maison rue Gasparin. Les indications de 1838 et 1887 conduisent aussi à un intervalle de 49 ans, arrondi à « cinquante ans » par l'auteur. Une propriété attribuée à Denise n'est pas nommée dans la phrase originale.
+Les corrections confirmées par le responsable du projet le 20 octobre 2026 sont intégrées au récit : Claude Denis décède à 73 ans, Bonaventure naît en 1856, Scholastique Bonaventure décède en 1883 et la borne de la période d'achat de la maison rue Gasparin est Mai 1871. Les leçons du tapuscrit restent documentées en notes. Les lectures Lijobard de Chappe, Briort et Gouverdriat sont confirmées ; le nom manquant de la propriété attribuée à Denise reste une lacune. Les indications de 1838 et 1887 conduisent aussi à un intervalle de 49 ans, arrondi à « cinquante ans » par l'auteur.
 
 ## Structure
 

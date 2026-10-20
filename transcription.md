@@ -7,7 +7,7 @@ lang: fr-FR
 
 # Avertissement éditorial {.unnumbered}
 
-Transcription des onze photographies IMGP0080.JPG à IMGP0090.JPG, dans leur ordre matériel. Les capitales des noms propres, les espacements, les césures et les coquilles mécaniques ont été normalisés sur le modèle du projet *Souvenirs de jeunesse de Félix Berloty*. Les corrections manuscrites lisibles sont intégrées. Les contradictions historiques sont conservées et signalées, sans correction conjecturale. Les notes ajoutées portent la mention « Note du transcripteur ». Les titres des trois parties sont éditoriaux ; le texte source ne comporte qu'un séparateur à la page 5 et un NOTA à la page 11. Les repères de pages restent dans les commentaires de la source Markdown et de la source LaTeX ; ils ne commandent pas les sauts de page de l'édition.
+Transcription des onze photographies IMGP0080.JPG à IMGP0090.JPG, dans leur ordre matériel. Les capitales des noms propres, les espacements, les césures et les coquilles mécaniques ont été normalisés sur le modèle du projet *Souvenirs de jeunesse de Félix Berloty*. Les corrections manuscrites lisibles sont intégrées. Les corrections de dates et d'âge confirmées par le responsable du projet le 20 octobre 2026 sont intégrées au récit ; les leçons du tapuscrit restent consignées dans les notes. Les autres incertitudes sont signalées sans correction conjecturale. Les notes ajoutées portent la mention « Note du transcripteur ». Les titres des trois parties sont éditoriaux ; le texte source ne comporte qu'un séparateur à la page 5 et un NOTA à la page 11. Les repères de pages restent dans les commentaires de la source Markdown et de la source LaTeX ; ils ne commandent pas les sauts de page de l'édition.
 
 Le document est signé « L. P. Février 1988 » ; la première photographie porte aussi la mention manuscrite « 2/88 ». Les annotations de possession et les mentions manuscrites hors texte sont décrites dans le relevé éditorial du projet.
 
@@ -77,9 +77,9 @@ La situation financière de Claude Denis et de Bonaventure en 1832 était donc c
 
 François Félix, leur fils, avait alors 24 ans ; le séjour à Lyon lui avait permis de faire des études poussées et de recevoir une éducation sérieuse, ce qui allait lui ouvrir les portes du Notariat, office auquel il fut admis le 30 Mars 1838, et lui permettre une entrée dans la bonne bourgeoisie lyonnaise par son mariage, le 20 Août 1839 avec Jeanne Françoise Marie Coste, fille de Benoit Coste et de Joséphine Colomb de Gast son épouse.
 
-Claude Denis Berloty décéda, à l'âge de 74 ans, le 18.6.1852, au château de Gros Bois à Ouroux (Rhône), propriété de son fils François Félix. L'acte de décès enregistré le 20.6.1852 au registre de l'État civil de la commune d'Ouroux, mentionne Claude Denis comme étant « propriétaire rentier », domicilié à Lyon et à Claveisolles, il possédait donc cette terre de Claveisolles qui fut vendue par la suite à la famille Reymond.[^age]
+Claude Denis Berloty décéda, à l'âge de 73 ans, le 18.6.1852, au château de Gros Bois à Ouroux (Rhône), propriété de son fils François Félix. L'acte de décès enregistré le 20.6.1852 au registre de l'État civil de la commune d'Ouroux, mentionne Claude Denis comme étant « propriétaire rentier », domicilié à Lyon et à Claveisolles, il possédait donc cette terre de Claveisolles qui fut vendue par la suite à la famille Reymond.[^age]
 
-Scholastique Bonaventure survécut longtemps à son mari. À la mort de celui-ci, elle avait déjà deux petits-enfants, Joséphine et Adrien ; ils furent suivis très vite d'une seconde petite fille Denise, née en Juillet 1852, puis ce fut en 1857, Bonaventure quatrième enfant de François Félix et de Marie Coste.[^bonaventure]
+Scholastique Bonaventure survécut longtemps à son mari. À la mort de celui-ci, elle avait déjà deux petits-enfants, Joséphine et Adrien ; ils furent suivis très vite d'une seconde petite fille Denise, née en Juillet 1852, puis ce fut en 1856, Bonaventure quatrième enfant de François Félix et de Marie Coste.[^bonaventure]
 
 <!-- Page 05 — IMGP0084.JPG -->
 
@@ -87,7 +87,7 @@ Les circonstances l'amenèrent rapidement à dépasser le rôle traditionnel de 
 
 Lorsque François Félix décéda en mai 1871, la tâche de Scholastique Bonaventure n'était toujours pas terminée bien qu'elle eût 85 ans. Adrien n'avait que 20 ans et les deux derniers étaient encore mineurs, Bonaventure ayant tout juste 15 ans.
 
-Scholastique Bonaventure dut jouer le rôle de chef de famille jusqu'à sa mort 12 ans plus tard ; cela ne lui fut pas contesté. Elle s'éteignit, à l'âge de 97 ans, mais toujours munie de toutes ses facultés, le 18 Avril 1893 à son domicile Place de la Bourse à Lyon et fut inhumée au cimetière d'Ouroux à côté de son mari.[^deces]
+Scholastique Bonaventure dut jouer le rôle de chef de famille jusqu'à sa mort 12 ans plus tard ; cela ne lui fut pas contesté. Elle s'éteignit, à l'âge de 97 ans, mais toujours munie de toutes ses facultés, le 18 Avril 1883 à son domicile Place de la Bourse à Lyon et fut inhumée au cimetière d'Ouroux à côté de son mari.[^deces]
 
 # François Félix Berloty et sa fortune immobilière
 
@@ -160,7 +160,7 @@ C/ La propriété de Pressy-sous-Dondin et St. André-le-Desert (superficie non 
 
 D/ La propriété de St. Régis-du-Coin (superficie non précisée).
 
-E/ La maison avec façade assez étroite (cinq fenêtres sur rue) 27, rue Gasparin entre la rue Simon Maupin et la place Bellecour. Cette maison ne figure pas sur le testament d'Août 1870 ; elle avait donc été probablement achetée entre Août 1870 et Mai 1881.[^gasparin]
+E/ La maison avec façade assez étroite (cinq fenêtres sur rue) 27, rue Gasparin entre la rue Simon Maupin et la place Bellecour. Cette maison ne figure pas sur le testament d'Août 1870 ; elle avait donc été probablement achetée entre Août 1870 et Mai 1871.[^gasparin]
 
 F/ La maison 2 Place de la Bourse à Lyon.
 
@@ -214,7 +214,7 @@ L. P. Février 1988.
 
 Elle a été bien restaurée récemment dans le style des restaurations du quartier Saint-Paul ; d'après les traces qui subsistent sur les encadrements des fenêtres, elle devait être à l'origine munie de fenêtres à meneaux, mais ceux-ci ont disparu par la suite ; elle est aujourd'hui numérotée 114 Quai Pierre Scize. C'est vraisemblablement celle où, sous le numéro 134 Quai de la Peyrollerie, résidaient Claude Denis et Scholastique Bonaventure au moment du mariage de François Félix.
 
-[^lijobard]: (Note du transcripteur) Lectures « Lijobard », « Briort » et « Gouverdriat » retenues d'après la photographie, sans identification externe. Ces graphies restent à vérifier sur l'acte de baptême ; aucune modernisation conjecturale n'est introduite.
+[^lijobard]: (Note du transcripteur) Lectures « Lijobard de Chappe », « Briort » et « Gouverdriat » confirmées par le responsable du projet le 20 octobre 2026 lors de la relecture de la photographie. Ces graphies sont conservées ; aucune identification externe n'a été effectuée.
 
 [^coupee]: (Note du transcripteur) La fraction après « une coupée » est petite et peu nette ; lecture retenue : ½, à confirmer.
 
@@ -224,16 +224,16 @@ Elle a été bien restaurée récemment dans le style des restaurations du quart
 
 [^nota]: (Note du transcripteur) Le NOTA figure à la fin du document, page 11 du tapuscrit, et est conservé comme dernière partie de cette édition.
 
-[^age]: (Note du transcripteur) L'âge de 74 ans est celui du tapuscrit. Une naissance en Avril 1779, donnée page 1, correspondrait à 73 ans en Juin 1852.
+[^age]: (Note du transcripteur) Le tapuscrit porte « 74 ans ». Corrigé en « 73 ans » sur confirmation du responsable du projet le 20 octobre 2026, en accord avec la naissance en Avril 1779 et le décès en Juin 1852.
 
-[^bonaventure]: (Note du transcripteur) « 1857 » est conservé. Les âges donnés pages 5 et 8 (6 ans en Décembre 1862, 15 ans en Mai 1871, 14 ans en Août 1870) suggèrent plutôt 1856 ; il ne s'agit pas d'une date vérifiée.
+[^bonaventure]: (Note du transcripteur) Le tapuscrit porte « 1857 ». Corrigé en « 1856 » sur confirmation du responsable du projet le 20 octobre 2026 ; cette année concorde avec les âges donnés pages 5 et 8.
 
-[^deces]: (Note du transcripteur) Le tapuscrit porte ici « 18 Avril 1893 », conservé. La page 8 indique « Avril 1883 ». « 12 ans plus tard » après 1871 et l'âge de 97 ans pour une naissance en 1786 concordent avec 1883. La divergence nécessite une vérification sur l'état civil.
+[^deces]: (Note du transcripteur) Le tapuscrit porte ici « 18 Avril 1893 ». L'année est corrigée en « 1883 » sur confirmation du responsable du projet le 20 octobre 2026. La page 8 indique aussi Avril 1883, en accord avec « 12 ans plus tard » après 1871 et l'âge de 97 ans pour une naissance en 1786.
 
 [^lantigne]: (Note du transcripteur) Le tapuscrit écrit « Lantigne » de façon répétée. Cette graphie est conservée.
 
-[^gasparin]: (Note du transcripteur) « Mai 1881 » est la lecture du tapuscrit, conservée. Le décès de F.F.B. est donné au 29 Mai 1871 page 8 et la vente de cette maison au 8 Avril 1879 page 9 ; « 1881 » paraît donc être une coquille pour « 1871 ».
+[^gasparin]: (Note du transcripteur) Le tapuscrit porte « Mai 1881 ». Corrigé en « Mai 1871 » sur confirmation du responsable du projet le 20 octobre 2026 ; F.F.B. est décédé le 29 Mai 1871 et la maison a été vendue le 8 Avril 1879.
 
-[^propriete]: (Note du transcripteur) Le nom de la propriété attribuée à Denise manque dans cette phrase du tapuscrit. Le texte ne permet pas de le restituer avec certitude ; aucune précision n'est ajoutée.
+[^propriete]: (Note du transcripteur) Le nom de la propriété attribuée à Denise manque dans cette phrase du tapuscrit. Cette lacune est confirmée par le responsable du projet le 20 octobre 2026 et conservée sans restitution.
 
 [^surfaces]: (Note du transcripteur) Les trois superficies transcrites totalisent 588 ha 24 (159,86 + 196,29 + 232,09), contre 588 hectares dans le récapitulatif arrondi. Les valeurs sont conservées.

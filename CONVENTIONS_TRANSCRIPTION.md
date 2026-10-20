@@ -21,6 +21,7 @@ Adaptation des [conventions de FelixBerloty](https://github.com/grostim/FelixBer
 
 - Toute note ajoutée commence par « (Note du transcripteur) ».
 - Ne pas rectifier silencieusement les incohérences de dates, âges ou montants. Les hypothèses sont formulées comme telles et restent distinctes d'une vérification d'état civil, qui n'a pas été menée.
+- Sur confirmation du responsable du projet, une correction peut être intégrée au récit avec une note indiquant la leçon originale et la date de confirmation. Le 20 octobre 2026 : décès de Scholastique Bonaventure en 1883, borne d'achat rue Gasparin en 1871, naissance de Bonaventure en 1856, âge de Claude Denis au décès de 73 ans. La lacune pour la propriété de Denise est conservée ; les lectures Lijobard de Chappe, Briort et Gouverdriat sont confirmées sans identification externe.
 - Les annotations de possession hors texte ne sont pas intégrées au récit ; elles sont décrites dans `RELEVE_EDITORIAL.md`.
 - La signature finale a été relue sur un agrandissement : « L. P. Février 1988 ».
 
@@ -34,4 +35,4 @@ Adaptation des [conventions de FelixBerloty](https://github.com/grostim/FelixBer
 
 ## Avancement
 
-11/11 pages transcrites et relues sur les images fournies ; points non résolus explicités dans le relevé éditorial et, lorsqu'ils touchent au récit, dans les notes. Une relecture humaine reste utile, particulièrement pour les noms propres rares et les annotations manuscrites.
+11/11 pages transcrites et relues sur les images fournies ; les six points principaux ont été arbitrés par le responsable du projet le 20 octobre 2026 et leur traitement est consigné dans le relevé éditorial. Restent à confirmer la fraction après « une coupée », l'ajout du chiffre 3 dans les articles de l'achat de bois et les annotations manuscrites hors récit.
