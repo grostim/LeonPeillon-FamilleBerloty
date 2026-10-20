@@ -6,7 +6,11 @@
 *.fdb_latexmk
 *.synctex.gz
 *.release.tex
+*.release.pdf
 .DS_Store
 __pycache__/
 tmp/
 output/
+/Leon_Peillon_Famille_Berloty.pdf
+/Leon_Peillon_Famille_Berloty.epub
+/Leon_Peillon_Famille_Berloty.md

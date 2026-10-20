@@ -1,5 +1,7 @@
 # La famille Berloty — Léon Peillon
 
+[![Validation LaTeX et publication](https://github.com/grostim/LeonPeillon-FamilleBerloty/actions/workflows/ci-release.yml/badge.svg)](https://github.com/grostim/LeonPeillon-FamilleBerloty/actions/workflows/ci-release.yml)
+
 Transcription du tapuscrit **« Des débuts modestes de Claude Denis Berloty et Scholastique Bonaventure Poulat à la fortune immobilière laissée par leur fils F.F. Berloty en 1871 »**, signé **L. P., Février 1988**, attribué à **Léon Peillon** d'après les tampons du document.
 
 Projet préparé sur le modèle de [grostim/FelixBerloty](https://github.com/grostim/FelixBerloty) : photographies sources conservées, transcription éditée, notes du transcripteur, édition LaTeX et exports PDF, EPUB et Markdown. Les onze photographies ont été transcrites ; les lectures incertaines et contradictions restent signalées. Il ne s'agit pas d'une vérification historique des actes cités.
@@ -12,7 +14,17 @@ Projet préparé sur le modèle de [grostim/FelixBerloty](https://github.com/gro
 - [Originaux et correspondance des noms](Originaux/manifest.csv).
 - [Source LaTeX générée](edition/main.tex).
 
-Après construction locale : [PDF](output/pdf/Leon_Peillon_Famille_Berloty.pdf), [EPUB](output/Leon_Peillon_Famille_Berloty.epub), [Markdown exporté](output/Leon_Peillon_Famille_Berloty.md). Ces sorties sont générées et exclues du versionnement ; elles sont également disponibles comme artefacts d'une exécution réussie de la CI. Aucun lien de release distante n'est annoncé tant qu'une publication n'a pas eu lieu.
+### Télécharger la dernière édition
+
+Les liens suivants pointent vers les livrables de la dernière release réussie et nécessitent l'accès au dépôt privé :
+
+| Format | Téléchargement |
+| --- | --- |
+| PDF | [Édition paginée](https://github.com/grostim/LeonPeillon-FamilleBerloty/releases/latest/download/Leon_Peillon_Famille_Berloty.pdf) |
+| EPUB | [Édition pour liseuse](https://github.com/grostim/LeonPeillon-FamilleBerloty/releases/latest/download/Leon_Peillon_Famille_Berloty.epub) |
+| Markdown | [Texte exporté](https://github.com/grostim/LeonPeillon-FamilleBerloty/releases/latest/download/Leon_Peillon_Famille_Berloty.md) |
+
+[Historique des releases](https://github.com/grostim/LeonPeillon-FamilleBerloty/releases). Les sorties locales restent disponibles dans `output/` après construction et sont exclues du versionnement.
 
 ## Contenu
 
@@ -55,7 +67,9 @@ Corriger `transcription.md`, puis reconstruire ; ne pas modifier directement `ed
 
 ## Intégration continue
 
-Le workflow construit les trois formats et conserve les artefacts sur les mises à jour, propositions et lancements manuels. Une release est publiée uniquement lors d'un envoi explicite de tag `v*`. La création d'un dépôt distant, les commits, les tags et l'envoi sur GitHub restent des opérations distinctes de la construction locale.
+La [pipeline de FelixBerloty](https://github.com/grostim/FelixBerloty/blob/master/.github/workflows/ci-release.yml) est reprise avec les noms de ce projet. Elle calcule la prochaine version depuis le plus grand tag `v*` (ou `v0.0.0`), selon le titre du dernier commit : `feat` incrémente la majeure ; `fix`, `style`, `refactor`, `docs` ou `correction` incrémentent la mineure ; les autres titres incrémentent le correctif.
+
+Après installation des dépendances, elle régénère `edition/main.tex` depuis le Markdown, injecte le numéro de version dans une copie `edition/main.release.tex`, compile le PDF en deux passes puis exporte Markdown et EPUB depuis cette même copie LaTeX avec Pandoc. Les trois formats sont conservés comme artefacts. Chaque push sur `main` ou `master` publie automatiquement le tag calculé et une release contenant les trois fichiers ; les propositions et lancements manuels valident la construction sans publication. Le tag cible le commit qui a déclenché la pipeline.
 
 ## Provenance
 

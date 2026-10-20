@@ -28,7 +28,8 @@ Adaptation des [conventions de FelixBerloty](https://github.com/grostim/FelixBer
 
 - Source LaTeX : classe `report`, 11 pt, A4, marges de 2,5 cm, Latin Modern, Babel français, en-têtes et liens discrets ; modèle adapté à un essai court sans portrait fourni.
 - `python3 scripts/build.py` produit PDF (deux passes), EPUB et copie Markdown. Les dépendances sont documentées dans le README.
-- La CI valide la construction sur les propositions et les mises à jour ; elle joint les trois formats comme artefacts. Une publication de release est prévue uniquement sur les tags `v*`.
+- La CI reprend la pipeline de FelixBerloty : version calculée à partir du plus grand tag `v*` et du titre du dernier commit (`feat` → majeure ; `fix`/`style`/`refactor`/`docs`/`correction` → mineure ; autres → correctif). Base sans tag : `v0.0.0`.
+- Après régénération du LaTeX depuis le Markdown, la CI injecte cette version dans `edition/main.release.tex`, compile le PDF en deux passes et génère les exports Markdown et EPUB depuis cette copie LaTeX. Chaque push sur `main` ou `master` publie automatiquement une release et ses trois livrables. Les propositions et lancements manuels construisent les artefacts sans publier.
 - Si des commits sont créés, utiliser les Conventional Commits en français (`feat:`, `fix:`, `docs:`, `style:`, `chore:`). Aucun dépôt distant ou tag n'est créé par le script de construction.
 
 ## Avancement
