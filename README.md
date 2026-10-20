@@ -63,7 +63,7 @@ Pour régénérer seulement le source LaTeX :
 python3 scripts/build.py --source-only
 ```
 
-Corriger `transcription.md`, puis reconstruire ; ne pas modifier directement `edition/main.tex`. La pagination de l'édition est indépendante des onze pages photographiées. Les trois parties du corps sont éditoriales ; elles sont identifiées dans l'avertissement.
+Corriger `transcription.md`, puis reconstruire ; ne pas modifier directement `edition/main.tex`. La pagination de l'édition est indépendante des onze pages photographiées. Les titres des deux parties du récit sont éditoriaux ; le NOTA final appartient au tapuscrit. Les conventions et interventions de transcription sont documentées dans `CONVENTIONS_TRANSCRIPTION.md` et `RELEVE_EDITORIAL.md`.
 
 ## Intégration continue
 
