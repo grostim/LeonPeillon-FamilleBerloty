@@ -2,6 +2,8 @@
 
 Ce relevé distingue la lecture du document des corrections éditoriales. Le 20 octobre 2026, le responsable du projet a confirmé les quatre corrections intégrées au récit ci-dessous, la lacune de désignation de la propriété de Denise et la lecture des noms propres de la page 2. Aucun acte d'état civil ou notarié externe n'a été consulté par le transcripteur ; les confirmations sont attribuées au responsable du projet, sans supposer leur source documentaire.
 
+Le tableau conserve l'historique des décisions de la première édition. Les mentions « en note » décrivent cet état initial : plusieurs notes du transcripteur ont ensuite été retirées dans les commits du 21 octobre 2026. L'édition courante est définie par `edition/main.tex`, compilé directement par la CI ; le NOTA de l'auteur est désormais une note de bas de page au passage concerné.
+
 | Page | Point | Traitement |
 | --- | --- | --- |
 | 1 | Mention manuscrite « 2/88 » à côté du tampon Léon Peillon | Hors récit ; cohérente avec Février 1988, signature finale relue en haute résolution. |

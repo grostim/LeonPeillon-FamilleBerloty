@@ -5,9 +5,9 @@ Adaptation des [conventions de FelixBerloty](https://github.com/grostim/FelixBer
 ## Texte et sources
 
 - Lecture visuelle des onze photographies fournies, dans l'ordre IMGP0080.JPG à IMGP0090.JPG ; correspondance et empreintes SHA-256 dans `Originaux/manifest.csv`. Les photographies sont copiées sans modification.
-- `transcription.md` est la source éditoriale unique. `edition/main.tex` est généré par Pandoc : corriger le Markdown puis régénérer pour éviter toute divergence entre PDF, EPUB et texte.
+- `edition/main.tex` est la source éditoriale unique depuis le 21 octobre 2026 : corriger directement ce fichier. La CI et la construction locale le lisent sans le réécrire ; PDF, EPUB et Markdown sont dérivés du même LaTeX. `transcription.md`, `scripts/template.tex` et `scripts/pages.lua` conservent les sources de la première conversion et ne participent plus à la construction.
 - Conserver les paragraphes et réunir les phrases qui traversent les pages 5–6, 8–9 et 9–10. Les repères photographiques sont des commentaires, y compris dans le LaTeX généré ; ils ne forcent pas la pagination de l'édition.
-- Le titre est celui de la première page. Les titres de parties sont éditoriaux et annoncés comme tels. Le séparateur page 5 est représenté par le début de la deuxième partie. Le NOTA final demeure une partie distincte ; il n'est pas transformé en note du transcripteur.
+- Le titre est celui de la première page. Les titres de parties sont éditoriaux. Le séparateur page 5 est représenté par le début de la deuxième partie. Le NOTA final est repris comme note de l'auteur au passage concerné, conformément à l'édition LaTeX modifiée le 21 octobre 2026.
 
 ## Normalisations
 
@@ -28,9 +28,9 @@ Adaptation des [conventions de FelixBerloty](https://github.com/grostim/FelixBer
 ## Construction et versionnement
 
 - Source LaTeX : classe `report`, 11 pt, A4, marges de 2,5 cm, Latin Modern, Babel français, en-têtes et liens discrets ; modèle adapté à un essai court sans portrait fourni.
-- `python3 scripts/build.py` produit PDF (deux passes), EPUB et copie Markdown. Les dépendances sont documentées dans le README.
+- `python3 scripts/build.py` compile le LaTeX versionné en PDF (deux passes), puis génère les exports EPUB et Markdown depuis ce LaTeX. Les dépendances sont documentées dans le README.
 - La CI reprend la pipeline de FelixBerloty : version calculée à partir du plus grand tag `v*` et du titre du dernier commit (`feat` → majeure ; `fix`/`style`/`refactor`/`docs`/`correction` → mineure ; autres → correctif). Base sans tag : `v0.0.0`.
-- Après régénération du LaTeX depuis le Markdown, la CI injecte cette version dans `edition/main.release.tex`, compile le PDF en deux passes et génère les exports Markdown et EPUB depuis cette copie LaTeX. Chaque push sur `main` ou `master` publie automatiquement une release et ses trois livrables. Les propositions et lancements manuels construisent les artefacts sans publier.
+- La CI injecte cette version dans une copie `edition/main.release.tex` du LaTeX versionné, compile le PDF en deux passes et génère les exports Markdown et EPUB depuis cette copie. Elle vérifie que `edition/main.tex` est resté inchangé. Chaque push sur `main` ou `master` publie automatiquement une release et ses trois livrables. Les propositions et lancements manuels construisent les artefacts sans publier.
 - Si des commits sont créés, utiliser les Conventional Commits en français (`feat:`, `fix:`, `docs:`, `style:`, `chore:`). Aucun dépôt distant ou tag n'est créé par le script de construction.
 
 ## Avancement

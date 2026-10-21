@@ -5,6 +5,8 @@ date: Février 1988
 lang: fr-FR
 ---
 
+> Archive de la première transcription. Depuis le 21 octobre 2026, le texte de référence est `edition/main.tex`. Ce fichier Markdown n'est pas utilisé pour construire les documents ; les exports à jour sont disponibles dans les releases.
+
 # Claude Denis Berloty et Scholastique Bonaventure Poulat
 
 <!-- Page 01 — IMGP0080.JPG -->

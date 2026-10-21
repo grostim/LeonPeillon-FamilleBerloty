@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Construit LaTeX, PDF et EPUB à partir du texte relu en Markdown."""
+"""Construit PDF, EPUB et Markdown depuis le source LaTeX versionné."""
 from pathlib import Path
-import argparse
 import shutil
 import subprocess
 
@@ -12,15 +11,6 @@ def run(*args):
     subprocess.run(args, cwd=ROOT, check=True)
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--source-only', action='store_true')
-    args = parser.parse_args()
-    (ROOT / 'edition').mkdir(exist_ok=True)
-    run('pandoc', 'transcription.md', '--from=markdown', '--to=latex', '--standalone',
-        '--top-level-division=chapter', '--template=scripts/template.tex',
-        '--lua-filter=scripts/pages.lua', '--wrap=none', '--output=edition/main.tex')
-    if args.source_only:
-        return
     out = ROOT / 'output'
     (out / 'pdf').mkdir(parents=True, exist_ok=True)
     scratch = ROOT / 'tmp' / 'latex'
@@ -29,9 +19,12 @@ def main():
         run('pdflatex', '-interaction=nonstopmode', '-halt-on-error',
             f'-output-directory={scratch}', 'edition/main.tex')
     shutil.copyfile(scratch / 'main.pdf', out / 'pdf' / f'{STEM}.pdf')
-    run('pandoc', 'transcription.md', '--to=epub3', '--toc', '--split-level=1',
+    run('pandoc', 'edition/main.tex', '--from=latex', '--to=epub3', '--toc', '--toc-depth=2',
+        '--metadata=title=La famille Berloty — Des débuts modestes à la fortune immobilière',
+        '--metadata=author=Léon Peillon', '--metadata=language=fr',
         f'--output=output/{STEM}.epub')
-    shutil.copyfile(ROOT / 'transcription.md', out / f'{STEM}.md')
+    run('pandoc', 'edition/main.tex', '--from=latex', '--to=gfm', '--wrap=none',
+        f'--output=output/{STEM}.md')
 
 if __name__ == '__main__':
     main()

@@ -25,11 +25,11 @@ L'essai retrace les origines rurales des Berloty et Poulat, leur installation à
 
 ```text
 Originaux/                  Onze JPG inchangés et manifest.csv avec SHA-256
-transcription.md            Source éditoriale complète
-edition/main.tex            Source LaTeX générée, ouvrable dans l'éditeur
+transcription.md            Transcription initiale archivée (non utilisée pour construire)
+edition/main.tex            Source éditoriale LaTeX à modifier
 scripts/build.py            Construction reproductible des trois formats
-scripts/template.tex        Mise en page LaTeX
-scripts/pages.lua           Conservation des repères photographiques
+scripts/template.tex        Ancien modèle de conversion (non utilisé pour construire)
+scripts/pages.lua           Ancien filtre de conversion (non utilisé pour construire)
 CONVENTIONS_TRANSCRIPTION.md
 RELEVE_EDITORIAL.md
 .github/workflows/ci-release.yml
@@ -46,19 +46,15 @@ Depuis la racine :
 python3 scripts/build.py
 ```
 
-Pour régénérer seulement le source LaTeX :
+Corriger directement [`edition/main.tex`](edition/main.tex), puis reconstruire. C'est la source unique du PDF, de l'EPUB et du Markdown exporté. La construction ne réécrit jamais ce fichier. `transcription.md` conserve la transcription initiale et n'est pas mis à jour avec les modifications ultérieures du LaTeX ; pour lire le texte à jour, utiliser les livrables de la dernière release ou les fichiers générés dans `output/`.
 
-```sh
-python3 scripts/build.py --source-only
-```
-
-Corriger `transcription.md`, puis reconstruire ; ne pas modifier directement `edition/main.tex`. La pagination de l'édition est indépendante des onze pages photographiées. Les titres des deux parties du récit sont éditoriaux ; le NOTA final appartient au tapuscrit. Les conventions et interventions de transcription sont documentées dans `CONVENTIONS_TRANSCRIPTION.md` et `RELEVE_EDITORIAL.md`.
+La pagination de l'édition est indépendante des onze pages photographiées. Les titres des deux parties du récit sont éditoriaux ; le NOTA de l'auteur est repris en note de bas de page. Les conventions et interventions de transcription sont documentées dans `CONVENTIONS_TRANSCRIPTION.md` et `RELEVE_EDITORIAL.md`.
 
 ## Intégration continue
 
 La [pipeline de FelixBerloty](https://github.com/grostim/FelixBerloty/blob/master/.github/workflows/ci-release.yml) est reprise avec les noms de ce projet. Elle calcule la prochaine version depuis le plus grand tag `v*` (ou `v0.0.0`), selon le titre du dernier commit : `feat` incrémente la majeure ; `fix`, `style`, `refactor`, `docs` ou `correction` incrémentent la mineure ; les autres titres incrémentent le correctif.
 
-Après installation des dépendances, elle régénère `edition/main.tex` depuis le Markdown, injecte le numéro de version dans une copie `edition/main.release.tex`, compile le PDF en deux passes puis exporte Markdown et EPUB depuis cette même copie LaTeX avec Pandoc. Les trois formats sont conservés comme artefacts. Chaque push sur `main` ou `master` publie automatiquement le tag calculé et une release contenant les trois fichiers ; les propositions et lancements manuels valident la construction sans publication. Le tag cible le commit qui a déclenché la pipeline.
+Après installation des dépendances, elle lit directement `edition/main.tex` au commit déclencheur, injecte le numéro de version dans une copie `edition/main.release.tex`, compile le PDF en deux passes puis exporte Markdown et EPUB depuis cette même copie LaTeX avec Pandoc. Une vérification empêche la publication si la construction a modifié `edition/main.tex`. Les trois formats sont conservés comme artefacts. Chaque push sur `main` ou `master` publie automatiquement le tag calculé et une release contenant les trois fichiers ; les propositions et lancements manuels valident la construction sans publication. Le tag cible le commit qui a déclenché la pipeline.
 
 ## Provenance
 

@@ -86,9 +86,6 @@ jobs:
             cm-super \
             pandoc
 
-      - name: Régénération du source LaTeX depuis la transcription
-        run: python3 scripts/build.py --source-only
-
       - name: Préparation des sources avec le numéro de release
         env:
           RELEASE_VERSION: ${{ steps.versioning.outputs.tag }}
@@ -133,6 +130,9 @@ jobs:
             --metadata author="Léon Peillon" \
             --metadata language="fr" \
             -o "Leon_Peillon_Famille_Berloty.epub"
+
+      - name: Vérification du source LaTeX versionné
+        run: git diff --exit-code -- edition/main.tex
 
       - name: Sauvegarde des artefacts de compilation
         uses: actions/upload-artifact@v4
