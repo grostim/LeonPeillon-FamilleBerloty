@@ -2,17 +2,7 @@
 
 [![Validation LaTeX et publication](https://github.com/grostim/LeonPeillon-FamilleBerloty/actions/workflows/ci-release.yml/badge.svg)](https://github.com/grostim/LeonPeillon-FamilleBerloty/actions/workflows/ci-release.yml)
 
-Transcription du tapuscrit **« Des débuts modestes de Claude Denis Berloty et Scholastique Bonaventure Poulat à la fortune immobilière laissée par leur fils F.F. Berloty en 1871 »**, signé **L. P., Février 1988**, attribué à **Léon Peillon** d'après les tampons du document.
-
-Projet préparé sur le modèle de [grostim/FelixBerloty](https://github.com/grostim/FelixBerloty) : photographies sources conservées, transcription éditée, notes du transcripteur, édition LaTeX et exports PDF, EPUB et Markdown. Les onze photographies ont été transcrites ; les lectures incertaines et contradictions restent signalées. Il ne s'agit pas d'une vérification historique des actes cités.
-
-## Lire et corriger
-
-- [Transcription complète](transcription.md), avec notes et repères des pages sources dans les commentaires.
-- [Conventions de transcription](CONVENTIONS_TRANSCRIPTION.md).
-- [Relevé des incohérences et annotations](RELEVE_EDITORIAL.md).
-- [Originaux et correspondance des noms](Originaux/manifest.csv).
-- [Source LaTeX générée](edition/main.tex).
+Transcription du docuement  **« Des débuts modestes de Claude Denis Berloty et Scholastique Bonaventure Poulat à la fortune immobilière laissée par leur fils F.F. Berloty en 1871 »**, signé **L. P., Février 1988**, attribué à **Léon Peillon** .
 
 ### Télécharger la dernière édition
 
